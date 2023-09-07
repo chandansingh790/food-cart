@@ -91,5 +91,5 @@ const routingPath = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<RouterProvider router={routingPath} />);
+root.render(<RouterProvider basename="/food-cart" router={routingPath} />);
 
