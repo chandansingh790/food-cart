@@ -49,7 +49,7 @@ const AppLayout = () => {
 
 const routingPath = createBrowserRouter([
 	{
-		path: "/",
+		path: "/food-cart",
 		element: <AppLayout />,
 		children: [
 			{
