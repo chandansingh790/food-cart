@@ -1,11 +1,14 @@
 {
+	"homepage": "https://chandansingh790.github.io/food-cart",
 	"name": "finding-the-path-ep-7",
 	"version": "1.0.0",
 	"description": "Routing in React",
 	"private": "false",
 	"scripts": {
 		"start": "parcel index.html",
-		"build": "parcel build index.html --public-url ./",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist",
+		"build": "parcel build index.html",
 		"test": "jest",
 		"watch-test": "jest --watch"
 	},
