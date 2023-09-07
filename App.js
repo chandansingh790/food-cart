@@ -50,7 +50,6 @@ const AppLayout = () => {
 const routingPath = createBrowserRouter([
 	{
 		path: "/food-cart",
-		basename: "/food-cart",
 		element: <AppLayout />,
 		children: [
 			{
@@ -88,9 +87,10 @@ const routingPath = createBrowserRouter([
 		],
 		errorElement: <Error />,
 	},
+	{ basename: "/food-cart" },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<RouterProvider basename="/food-cart" router={routingPath} />);
+root.render(<RouterProvider router={routingPath} />);
 
