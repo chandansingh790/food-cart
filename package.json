@@ -2,6 +2,7 @@
 	"name": "finding-the-path-ep-7",
 	"version": "1.0.0",
 	"description": "Routing in React",
+	"private": "false",
 	"scripts": {
 		"start": "parcel index.html",
 		"build": "parcel build index.html --public-url ./",

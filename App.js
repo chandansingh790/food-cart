@@ -50,10 +50,11 @@ const AppLayout = () => {
 const routingPath = createBrowserRouter([
 	{
 		path: "/food-cart",
+		basename: "/food-cart",
 		element: <AppLayout />,
 		children: [
 			{
-				path: "/",
+				path: "/food-cart",
 				element: <Body />,
 			},
 			{
